@@ -1,0 +1,21 @@
+/*
+ * main_app.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: etienne.lima
+ */
+
+
+#include "main_app.h"
+
+
+int main()
+{
+	Hal_init();
+	SystemClockConfig();
+
+	while(1)
+	{
+
+	}
+}

@@ -1,0 +1,5 @@
+../Core/Src/main_app.c:27:5:main	1
+../Core/Src/main_app.c:60:6:UART2_Init	2
+../Core/Src/main_app.c:76:6:redo_systick	1
+../Core/Src/main_app.c:83:6:SystemClockCongig	3
+../Core/Src/main_app.c:111:6:Error_handler	1

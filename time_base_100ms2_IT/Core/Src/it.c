@@ -1,0 +1,23 @@
+/*
+ * it.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: etienne.lima
+ */
+
+
+#include "stm32f4xx_hal.h"
+#include "main_app.h"
+
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+	HAL_SYSTICK_IRQHandler();
+}
+
+void TIM1_UP_TIM10_IRQHandler(void)
+{
+	HAL_TIM_IRQHandler(&htim10);
+
+}

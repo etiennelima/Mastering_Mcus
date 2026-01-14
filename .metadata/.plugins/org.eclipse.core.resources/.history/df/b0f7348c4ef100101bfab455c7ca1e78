@@ -1,0 +1,21 @@
+/*
+ * main_app.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: etienne.lima
+ */
+
+#include "stm32f4xx_hal.h"
+
+TIM_HandleTypeDef htim2;
+
+int main(void)
+{
+	HAL_Init();
+	SystemClockConfig();
+
+	while(1)
+	{
+
+	}
+}

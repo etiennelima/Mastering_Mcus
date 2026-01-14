@@ -1,0 +1,18 @@
+14:46:43 **** Incremental Build of configuration Debug for project time_base_100ms2_IT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/it.d" -MT"Core/Src/it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/it.o"
+arm-none-eabi-gcc "../Core/Src/main_app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main_app.d" -MT"Core/Src/main_app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main_app.o"
+arm-none-eabi-gcc -o "time_base_100ms2_IT.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/etienne.lima/STM32CubeIDE/mastering_mcus/time_base_100ms2_IT/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="time_base_100ms2_IT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: time_base_100ms2_IT.elf
+ 
+arm-none-eabi-size  time_base_100ms2_IT.elf 
+arm-none-eabi-objdump -h -S time_base_100ms2_IT.elf  > "time_base_100ms2_IT.list"
+   text	   data	    bss	    dec	    hex	filename
+   3776	     12	   1644	   5432	   1538	time_base_100ms2_IT.elf
+Finished building: default.size.stdout
+ 
+Finished building: time_base_100ms2_IT.list
+ 
+
+14:46:44 Build Finished. 0 errors, 0 warnings. (took 602ms)
+

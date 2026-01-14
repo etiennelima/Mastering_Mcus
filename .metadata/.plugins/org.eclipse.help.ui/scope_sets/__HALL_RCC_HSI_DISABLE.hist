@@ -1,0 +1,4 @@
+#Wed Jan 07 12:34:07 BRT 2026
+__DEFAULT__=false
+expression=__HALL_RCC_HSI_DISABLE
+org.eclipse.help.ui.localSearch.master=true

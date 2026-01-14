@@ -1,0 +1,30 @@
+/*
+ * main_app.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: etienne.lima
+ */
+
+#include "stm32f4xx_hal.h"
+
+void SystemClockConfig(void);
+void Error_handler(void);
+
+TIM_HandleTypeDef htim10;
+
+int main(void)
+{
+	HAL_Init();
+	SystemClockConfig();
+	TIMER10_Init();
+	while(1)
+	{
+
+	}
+}
+
+
+void SystemClockConfig()
+{
+
+}
