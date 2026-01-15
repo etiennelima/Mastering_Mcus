@@ -3,20 +3,20 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="TIM_Counter_Mode"/>
+		<item value="HAL_TIM_HandleTypeDef"/>
+		<item value="TIM_HandleTypeDef"/>
+		<item value="TI,M_HandleTypeDef"/>
+		<item value="TIM_HandleTypeDef,"/>
+		<item value="HAL_TIM_IRQHandler"/>
+		<item value="tim10"/>
+		<item value="__HAL_TIM_ENABLE"/>
+		<item value="GPIO_mode_define"/>
 		<item value="RCC_LL_EC_SYSCLK_DIV"/>
 		<item value="RCC_LL_EC_APB1_DIV"/>
 		<item value="RCC_PLL_Config"/>
 		<item value="RCC_HSI_Config"/>
 		<item value="RCC_Oscillator_Type"/>
 		<item value="RCC_APB1_APB2_Clock_Source"/>
-		<item value="RCC_AHB_Clock_Source"/>
-		<item value="RCC_System_Clock_Source"/>
-		<item value="RCC_System_Clock_Type"/>
-		<item value="RCC_LSE_Config"/>
-		<item value="RCC_HSE_Config"/>
-		<item value="STM32F411XE"/>
-		<item value="UART_Over_Sampling"/>
-		<item value="GPIO_Alternate_function_selection"/>
-		<item value="GPIO_speed_define"/>
 	</list>
 </section>

@@ -1,0 +1,17 @@
+10:03:11 **** Incremental Build of configuration Debug for project time_IC_1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main_app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main_app.d" -MT"Core/Src/main_app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main_app.o"
+arm-none-eabi-gcc -o "time_IC_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/etienne.lima/STM32CubeIDE/mastering_mcus/time_IC_1/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="time_IC_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: time_IC_1.elf
+ 
+arm-none-eabi-size  time_IC_1.elf 
+arm-none-eabi-objdump -h -S time_IC_1.elf  > "time_IC_1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8400	     12	   1644	  10056	   2748	time_IC_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: time_IC_1.list
+ 
+
+10:03:11 Build Finished. 0 errors, 0 warnings. (took 544ms)
+

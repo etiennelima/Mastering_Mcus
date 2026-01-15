@@ -1,0 +1,44 @@
+/*
+ * msp.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: etienne.lima
+ */
+
+#include "stm32f4xx_hal.h"
+
+void HAL_MspInit(void)
+{
+
+	//1. Set up the priority grouping of the cortex mx processor
+	HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+
+	//2. Enable required system exceptions of the cortex mx processor
+	SCB->SHCSR |= 0x7 << 16;
+
+	//3. Configure priority for the system exceptions
+	HAL_NVIC_SetPriority(MemoryManagement_IRQn, 0, 0);
+	HAL_NVIC_SetPriority(BusFault_IRQn, 0, 0);
+	HAL_NVIC_SetPriority(UsageFault_IRQn, 0, 0);
+}
+
+
+void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
+{
+	GPIO_InitTypeDef mygpio;
+	//1. Enable clock
+	__HAL_RCC_TIM2_CLK_ENABLE();
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+
+	// 2. Configure gpio to baheave as timer5 channel 1
+	mygpio.Pin = GPIO_PIN_0;
+	mygpio.Mode = GPIO_MODE_AF_PP;
+	mygpio.Alternate = GPIO_AF1_TIM2;
+
+	HAL_GPIO_Init(GPIOA, &mygpio);
+
+	//3. nvic settigns
+	HAL_NVIC_SetPriority(TIM2_IRQn, 15, 0);
+	HAL_NVIC_EnableIRQ(TIM2_IRQn);
+
+}
