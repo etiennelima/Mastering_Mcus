@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
-	<item key="replaceBarOpen" value="false"/>
+	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="GPIO_Alternate_function_selection"/>
+		<item value="GPIO_mode_define"/>
+		<item value="TIM_Input_Capture_Prescaler"/>
+		<item value="TIM_Input_Capture_Polarity"/>
 		<item value="TIM_Counter_Mode"/>
 		<item value="HAL_TIM_HandleTypeDef"/>
 		<item value="TIM_HandleTypeDef"/>
@@ -11,12 +15,10 @@
 		<item value="HAL_TIM_IRQHandler"/>
 		<item value="tim10"/>
 		<item value="__HAL_TIM_ENABLE"/>
-		<item value="GPIO_mode_define"/>
 		<item value="RCC_LL_EC_SYSCLK_DIV"/>
 		<item value="RCC_LL_EC_APB1_DIV"/>
 		<item value="RCC_PLL_Config"/>
-		<item value="RCC_HSI_Config"/>
-		<item value="RCC_Oscillator_Type"/>
-		<item value="RCC_APB1_APB2_Clock_Source"/>
+	</list>
+	<list key="replacehistory">
 	</list>
 </section>

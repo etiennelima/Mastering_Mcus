@@ -22,7 +22,7 @@
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="__hall_rcc_hsi_disable"/>
+			<item value="hal_tim_ic_mspinit"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
